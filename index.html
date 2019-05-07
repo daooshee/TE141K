@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TE141K</title>
+    <style type="text/css">
+        body{
+        	background-color: white;
+        }
+        .links{
+        	text-decoration: none;
+        	color: #0066CC;
+        }
+        .p2{
+        	padding-top: 20px;
+        	font-size: 25px;
+        }
+        .p1{
+        	text-align:justify;
+        	text-justify:inter-ideograph;
+        }
+        a{
+        	font-family: Sans-serif;
+        }
+        p{
+        	font-family: Sans-serif;
+        }
+        ul{
+        	font-family: Sans-serif;
+        }
+    </style>
+</head>
+<body>
+	<div align="center" style="padding-top: 30px;">
+	<p style="font-size:35px;">TE141K: Artistic Text Benchmark for Text Effects Transfer</p>
+
+	<a href="mailto:williamyang@pku.edu.cn" class="links">Shuai Yang</a> &nbsp; &nbsp; 
+	<a href="mailto:daooshee@pku.edu.cn" class="links">Wenjing Wang</a> &nbsp; &nbsp; 
+	<a href="mailto:liujiaying@pku.edu.cn" class="links">Jiaying Liu</a>
+
+	</div>
+
+	<div align="left" style="padding-left: 200px; padding-right: 200px; padding-bottom: 20px;">
+		<p class='p2'> </p> 
+		<div style="padding-left: 60px; padding-right: 60px;">
+			<div align="center">
+				<img src="Image/Teasor.jpg" width="100%"> <br>
+			</div>
+		<p class='p1'> Figure 1. Representative text effects in TE141K. Text styles are grouped into three subsets based on the glyph type, including TE141K-E (English alphabet subset, 67 styles), TE141K-C (Chinese character subset, 65 styles), and TE141K-S (Symbol and other language subset, 20 styles).
+		</p>
+		</div>
+
+		<p class='p2'> Abstract </p> 
+		<p class='p1'> Text effects are combinations of visual elements such as outlines, colors and textures of text, which can dramatically improve its artistry. Although text effects are extensively utilized in the design industry, they are usually created by human experts due to their extreme complexity, which is laborious and not practical for normal users. In recent years, some efforts have been made for automatic text effects transfer, however, the lack of data limits the capability of transfer models. To address this problem, we introduce a new text effects dataset, TE141K, with 141,081 text effects/glyph pairs in total. Our dataset consists of 152 professionally designed text effects, rendered on glyphs including English letters, Chinese characters, Arabic numerals, etc. To the best of our knowledge, this is the largest dataset for text effects transfer as far. Based on this dataset, we propose a baseline approach named Text Effects Transfer GAN (TET-GAN), which supports the transfer of all 152 styles in one model and can efficiently extend to new styles. Finally, we conduct a comprehensive comparison where 14 style transfer models are benchmarked. Experimental results demonstrate the superiority of TET-GAN both qualitatively and quantitatively, and indicate that our dataset is effective and challenging. </p>
+
+		<p class='p2'> Dataset </p> 
+
+		<div align="center">
+			<img src="Image/Statistics.jpg" width="100%">
+		</div>
+		<p class='p1'> Figure 2. Statistics of TE141K. (a) Visualized text effects distribution in TE141K by t-SNE [1] based on their VGG [2] features. Perceptually similar text effects are placed closely to each other. The evenly dispersed distribution  indicates the data diversity and richness of our dataset. (b) Distribution of different background, foreground, stroke, and stereo effects subclasses of our dataset. Representative images are shown at the top. The first row: schematics where red is used to represent specific text effects subclasses. The second row: representative samples from TE141K.</p>
+
+		<p class='p2'> Framework of TET-GAN</p> 
+		<div align="center">
+			<img src="Image/Network.jpg" width="90%"> <br>
+		</div>
+		<p class='p1'> Figure 3. The TET-GAN architecture. (a) An overview of TET-GAN architecture. Our network is trained via three objectives of autoencoder, destylization and stylization. (b) Glyph autoencoder to learn content features. (c) Destylization by disentangling content features from text effects images. (d) Stylization by combining content and style features. </p>
+
+		<p class='p2'> Resources </p> 
+		<p class='p1'>
+			<ul style="line-height:15px">
+			　　<li> Paper: <a href="" class="links"> arXiv </a></li>
+				<li> Supplementary: <a href="" class="links"> PDF </a></li>
+			　　<li> Dataset: <a href="" class="links"> Google Drive </a></li>
+			</ul>
+			
+			<br>
+			We also provide the results of all benchmarked style transfer models, and a script for quantitative performance evaluation.
+			<ul style="line-height:15px">
+			　　<li> Results of all methods: <a href="" class="links"> Google Drive </a></li>
+			　　<li> Quantitative Evaluation Script: <a href="" class="links"> Github </a></li>
+			</ul>
+		</p>
+
+		<p class='p2'> Citation</p>
+		<p> 
+			@article{ <br>
+			&nbsp; &nbsp; author = {Shuai Yang and Wenjing Wang and Jiaying Liu}, <br>
+			&nbsp; &nbsp; ... ...  <br>
+			}
+
+		</p>
+
+		<p class='p2'> Selected Benchmarking Results</p> 
+		<div align="center">
+			<img src="Image/Full-Results.jpg" width="100%"> <br>
+		</div>
+		<p class='p1'> Figure 4. Comparison with state-of-the-art methods on general text effects transfer. (a) Input example text effects with the target text in the lower-left corner. (b) AdaIN [3]. (c) WCT [4]. (d) Doodles [5]. (e) T-Effect [6]. (f) Pix2pix [7]. (g) BicycleGAN [8]. (h) StarGAN [9]. (i) TET-GAN. </p>
+
+		<p class='p2'> Reference</p>
+		<p class='p1'> [1] L. v. d. Maaten and G. Hinton, “Visualizing data using t-sne,” Journal of machine learning research, vol. 9, no. Nov, pp. 2579–2605, 2008.</p>
+
+		<p class='p1'> [2] K. Simonyan and A. Zisserman, “Very deep convolutional networks for large-scale image recognition,” arXiv preprint arXiv:1409.1556, 2014.</p>
+
+		<p class='p1'> [3] X. Huang and S. Belongie, “Arbitrary style transfer in real-time with adaptive instance normalization,” in Proc. Int’l Conf. Computer Vision, 2017, pp. 1510–1519.</p>
+
+		<p class='p1'> [4] Y. Li, C. Fang, J. Yang, Z. Wang, X. Lu, and M.-H. Yang, “Universal style transfer via feature transforms,” in Advances in Neural Information Processing Systems, 2017, pp. 386–396.</p>
+
+		<p class='p1'> [5] A. J. Champandard, “Semantic style transfer and turning two-bit doodles into fine artworks,” 2016, arXiv:1603.01768.</p>
+
+		<p class='p1'> [6] S. Yang, J. Liu, Z. Lian, and Z. Guo, “Awesome typography: Statistics-based text effects transfer,” in Proc. IEEE Int’l Conf. Computer Vision and Pattern Recognition, 2017, pp. 7464–7473.</p>
+
+		<p class='p1'> [7] P. Isola, J. Y. Zhu, T. Zhou, and A. A. Efros, “Image-to-image translation with conditional adversarial networks,” in Proc. IEEE Int’l Conf. Computer Vision and Pattern Recognition, 2017, pp. 5967– 5976.</p>
+
+		<p class='p1'> [8] J.-Y. Zhu, R. Zhang, D. Pathak, T. Darrell, A. A. Efros, O. Wang, and E. Shechtman, “Toward multimodal image-to-image translation,” in Advances in Neural Information Processing Systems, 2017, pp. 465– 476.</p>
+
+		<p class='p1'> [9] Y. Choi, M. Choi, M. Kim, J. W. Ha, S. Kim, and J. Choo, “Stargan: Unified generative adversarial networks for multi-domain image-to-image translation,” in Proc. IEEE Int’l Conf. Computer Vision and Pattern Recognition, 2018.</p>
+
+	</div>
+
+</html>
