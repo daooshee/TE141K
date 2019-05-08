@@ -40,9 +40,9 @@
 
 	</div>
 
-	<div align="left" style="padding-left: 200px; padding-right: 200px; padding-bottom: 20px;">
+	<div align="left" style="padding-left: 15%; padding-right: 15%; padding-bottom: 30px;">
 		<p class='p2'> </p> 
-		<div style="padding-left: 60px; padding-right: 60px;">
+		<div style="padding-left: 5%; padding-right: 5%;">
 			<div align="center">
 				<img src="Image/Teasor.jpg" width="100%"> <br>
 			</div>
@@ -56,46 +56,53 @@
 		<p class='p2'> Dataset </p> 
 
 		<div align="center">
+			<img src="Image/DatasetTable.jpg" width="95%">
+		</div>
+		<p class='p1'> Table 1. A summary of TE141K. Based on glyph types, TE141K can be split into three subsets, where styles are different in different subsets.</p>
+
+		<br>
+
+		<div align="center">
 			<img src="Image/Statistics.jpg" width="100%">
 		</div>
 		<p class='p1'> Figure 2. Statistics of TE141K. (a) Visualized text effects distribution in TE141K by t-SNE [1] based on their VGG [2] features. Perceptually similar text effects are placed closely to each other. The evenly dispersed distribution  indicates the data diversity and richness of our dataset. (b) Distribution of different background, foreground, stroke, and stereo effects subclasses of our dataset. Representative images are shown at the top. The first row: schematics where red is used to represent specific text effects subclasses. The second row: representative samples from TE141K.</p>
 
-		<p class='p2'> Framework of TET-GAN</p> 
-		<div align="center">
-			<img src="Image/Network.jpg" width="90%"> <br>
-		</div>
-		<p class='p1'> Figure 3. The TET-GAN architecture. (a) An overview of TET-GAN architecture. Our network is trained via three objectives of autoencoder, destylization and stylization. (b) Glyph autoencoder to learn content features. (c) Destylization by disentangling content features from text effects images. (d) Stylization by combining content and style features. </p>
 
 		<p class='p2'> Resources </p> 
 		<p class='p1'>
 			<ul style="line-height:15px">
-			　　<li> Paper: <a href="" class="links"> arXiv </a></li>
-			　　<li> Supplementary: <a href="" class="links"> PDF </a></li>
-			　　<li> Dataset: <a href="" class="links"> Google Drive </a></li>
+			　　<li> Paper: Coming Soon. </li>
+			　　<li> Supplementary: <a href="https://drive.google.com/file/d/1HARtnbxeRH0hV47yPdhBIRorQs5uOFcQ/view?usp=sharing" class="links"> PDF </a></li>
+			　　<li> Dataset: Coming Soon. </li>
 			</ul>
 			
 			<br>
 			We also provide the results of all benchmarked style transfer models, and a script for quantitative performance evaluation.
 			<ul style="line-height:15px">
-			　　<li> Results of all methods: <a href="" class="links"> Google Drive </a></li>
+			　　<li> Results of all methods: Coming Soon.</a></li>
 			　　<li> Quantitative Evaluation Script: <a href="https://github.com/daooshee/TE141K/tree/master/EvaluationScripts" class="links"> Github </a></li>
 			</ul>
 		</p>
 
-		<p class='p2'> Citation</p>
+<!-- 		<p class='p2'> Citation</p>
 		<p> 
 			@article{ <br>
 			&nbsp; &nbsp; author = {Shuai Yang and Wenjing Wang and Jiaying Liu}, <br>
 			&nbsp; &nbsp; ... ...  <br>
 			}
 
-		</p>
+		</p> -->
 
 		<p class='p2'> Selected Benchmarking Results</p> 
 		<div align="center">
 			<img src="Image/Full-Results.jpg" width="100%"> <br>
 		</div>
-		<p class='p1'> Figure 4. Comparison with state-of-the-art methods on general text effects transfer. (a) Input example text effects with the target text in the lower-left corner. (b) AdaIN [3]. (c) WCT [4]. (d) Doodles [5]. (e) T-Effect [6]. (f) Pix2pix [7]. (g) BicycleGAN [8]. (h) StarGAN [9]. (i) TET-GAN. </p>
+		<p class='p1'> Figure 3. Comparison with state-of-the-art methods on general text effects transfer. (a) Input example text effects with the target text in the lower-left corner. (b) AdaIN [3]. (c) WCT [4]. (d) Doodles [5]. (e) T-Effect [6]. (f) Pix2pix [7]. (g) BicycleGAN [8]. (h) StarGAN [9]. (i) TET-GAN. </p>
+
+		<div align="center">
+			<img src="Image/Full-Table.jpg" width="50%"> <br>
+		</div>
+		<p class='p1'> Table 2. Performance benchmarking on the task of general text effects transfer with PSNR, SSIM, Perceptual Loss, Style Loss, and the average score of user study. The best score in each column is marked in bold, and the second best score is underlined. </p>
 
 		<p class='p2'> Reference</p>
 		<p class='p1'> [1] L. v. d. Maaten and G. Hinton, “Visualizing data using t-sne,” Journal of machine learning research, vol. 9, no. Nov, pp. 2579–2605, 2008.</p>
