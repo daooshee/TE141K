@@ -1,5 +1,7 @@
 # Benchmarking Representative Style Transfer Models
 
+Links to the papers and corresponding codes of all benchmarked models.
+
 Parts borrowed from [[Neural Style Transfer: A Review]](https://github.com/ycjing/Neural-Style-Transfer-Papers)
 
 ## Global-based
