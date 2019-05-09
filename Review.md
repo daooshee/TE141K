@@ -1,5 +1,6 @@
 # Benchmarking Representative Style Transfer Models
 
+Parts borrowed from [[Neural Style Transfer: A Review]](https://github.com/ycjing/Neural-Style-Transfer-Papers)
 
 ## Global-based
 
@@ -38,7 +39,6 @@
 
 *   [Matlab-based](https://github.com/PJunhyuk/ImageQuilting)
 
-
 3. **[CNNMRF]** C. Li and M. Wand, “Combining markov random fields and convolutional neural networks for image synthesis,” in Proc. IEEE Int’l Conf. Computer Vision and Pattern Recognition, 2016, pp. 2479–2486. [[Paper]](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Li_Combining_Markov_Random_CVPR_2016_paper.pdf)
 
 *   [Torch-based](https://github.com/chuanli11/CNNMRF)
@@ -46,7 +46,6 @@
 4. **[Doodles]**  A. J. Champandard, “Semantic style transfer and turning two-bit doodles into fine artworks,” 2016, arXiv:1603.01768. [[Paper]](https://arxiv.org/pdf/1603.01768.pdf) 
 
 *   [Torch-based](https://github.com/alexjc/neural-doodle)
-
 
 5. **[T-Effect]** S. Yang, J. Liu, Z. Lian, and Z. Guo, “Awesome typography: Statistics-based text effects transfer,” in Proc. IEEE Int’l Conf. Computer Vision and Pattern Recognition, 2017, pp. 7464–7473. [[Paper]](https://arxiv.org/abs/1611.09026)
 
