@@ -63,7 +63,7 @@ Parts borrowed from [[Neural Style Transfer: A Review]](https://github.com/ycjin
 *   [Torch-based](https://github.com/phillipi/pix2pix)
 *   [Pytorch-based](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 *   [TensorFlow-based](https://github.com/yenchenlin/pix2pix-tensorflow)
-*   [Chainer-based](https://github.com/yenchenlin/pix2pix-tensorflow)
+*   [Chainer-based](https://github.com/pfnet-research/chainer-pix2pix)
 
 2. **[BicycleGAN]** J.-Y. Zhu, R. Zhang, D. Pathak, T. Darrell, A. A. Efros, O. Wang, and E. Shechtman, “Toward multimodal image-to-image translation,” in Advances in Neural Information Processing Systems, 2017, pp. 465–476. [[Paper]](https://arxiv.org/pdf/1711.11586.pdf)
 
